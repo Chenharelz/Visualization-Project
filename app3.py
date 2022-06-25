@@ -97,7 +97,7 @@ championship_data['Year'] = pd.to_datetime(championship_data['Year'], format='%Y
 # MAIN GRAPH
 data_main = championship_data.groupby(['Team']).mean()['Position'].reset_index().round(1)
 data_pos = championship_data
-colors = ['#00D2BE', '#DC0000', '#0600EF', '#FF8700', '#005AFF', 'Yellow', 'pink','#900000','#2B4562','#FFFFFF']
+colors = ['#7bccc4', '#ef3b2c', '#253494', '#fd8d3c', '#4292c6', '#fed976', '#fa9fb5','#a50f15','#225ea8','#FFFFFF']
 data_main['Color'] = colors
 data_main['Color'] = data_main['Color'].astype(str)
 
