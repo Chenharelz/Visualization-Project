@@ -220,7 +220,7 @@ with row3_2:
 
 space(2)
 
-col1 ,col2 = st.columns((0.005,0.9))
+col1 ,col2 = st.columns((.1,.9))
 #  Load the Visualization
 HtmlFile = open("chart.html", 'r', encoding='utf-8')
 source_code = HtmlFile.read()
