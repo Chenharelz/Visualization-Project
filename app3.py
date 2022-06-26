@@ -128,7 +128,7 @@ lines = alt.Chart(data_pos, title='Position by Year').mark_line(size=5).encode(
     .transform_filter(selection)
 
 points = alt.Chart(data_pos).mark_point(fill='black', color='white', size=50, opacity=0.8).encode(
-    x=alt.X('Year'),
+    x=alt.X('Year',axis = alt.Axis(grid=False),
     y=alt.Y('Position', scale=alt.Scale(domain=[10.5, 0]), axis=alt.Axis(tickCount=10)),)\
     .transform_filter(selection)
 
