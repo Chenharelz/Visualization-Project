@@ -107,7 +107,7 @@ main = alt.Chart(data_main, title='Average Position by Teams').encode(
 
 main1 = main.mark_bar().encode(
     color=  alt.Color('Team', scale=alt.Scale(domain=['Mercedes','Ferrari', 'Red Bull', 'McLaren','Williams', 'Renault','Racing Point', 'Sauber','AlphaTauri', 'Haas'],
-            range=colors)), 
+            range=colors), 
                  
             legend=alt.Legend(orient='none', legendX=610, legendY=0)))
 
