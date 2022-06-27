@@ -109,9 +109,8 @@ main1 = main.mark_bar().encode(
     color= alt.condition(selection, 
                          alt.Color('Team', scale=alt.Scale(domain=['Mercedes','Ferrari', 'Red Bull', 'McLaren','Williams', 'Renault','Racing Point', 'Sauber','AlphaTauri', 'Haas'],
                         range=colors)), 
-                         alt.ColorValue("grey"))
-                                             ,
-    legend=alt.Legend(orient='none', legendX=610, legendY=0)))
+                         alt.ColorValue("grey"),
+                         legend=alt.Legend(orient='none', legendX=610, legendY=0)))
 
 text = main.mark_text(align='center', baseline='bottom', dy=-3, color='white', size=14).encode(
     text='Position')
